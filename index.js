@@ -1,5 +1,5 @@
-function showMessage(form, text = "текст не добавлен") {
+function showMessage(from, text,) {
     alert( from + ': ' + text );
 }
 
-showMessage("Аня");
+showMessage('Anna', 'Привет!');
