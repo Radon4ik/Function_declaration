@@ -25,9 +25,7 @@ if (value === '*') {
         }
     }  
 }
-else {
-    alert('you did not enter the required settings');
-}
+
 
 
      
