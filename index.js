@@ -1,54 +1,46 @@
-  
-const firstNum = prompt('Enter the first digit');
-const value = prompt('Enter the value(+-*/)');
-const secondNum = prompt('Enter the second digit');
+function askNumbers() {
+    const firstNum = +prompt('Enter the first digit');
+    const value = prompt('Enter the value(+-*/)');
+    const secondNum = +prompt('Enter the second digit'); 
+    const example = `${firstNum} ${value} ${secondNum} =`;
 
-// function colculate() {
-    
-// if (value === '*') {
-// const multiply = Number(firstNum) * Number(secondNum);
-// }
-// if (value === '/') { 
-// const division = Number(firstNum) / Number(secondNum);
-// }
-// if (value === '+') {
-// const plus = Number(firstNum) + Number(secondNum);
-// }
-// if (value === '-') { 
-// const minus = Number(firstNum) - Number(secondNum);
-// }   
-// }     
+    if (value === '*') {
+        console.log(example, multiply(firstNum, secondNum));
+    }else if (value === '/') {
+        console.log (example, division(firstNum, secondNum));
+    }else if (value === '+') {
+        console.log(example, plus(firstNum, secondNum));
+    }else if (value === '-') {
+        console.log(example, minus(firstNum, secondNum));
+    }else {
+        console.log('You entered incorrect operation')
+    }
+}
 
-function multiply() {
-     if (value === '*') {
-         const multi = Number(firstNum) * Number(secondNum)
-         console.log(`${firstNum} * ${secondNum} = ${multi}`)
-     }  
- };          
-multiply();
+askNumbers();
 
 
-function division() {
-     if (value === '/') {
-         const divi = Number(firstNum) / Number(secondNum)
-         console.log(`${firstNum} / ${secondNum} = ${divi}`)
-     }  
- };          
-division();
 
-function plus() {
-     if (value === '+') {
-         const plusNum = Number(firstNum) + Number(secondNum)
-         console.log(`${firstNum} + ${secondNum} = ${plusNum}`)
-     }  
- }; 
+function multiply(first, second) {
+    return first * second;
+}
 
-plus();
 
-function minus() {
-     if (value === '-') {
-         const min = Number(firstNum) - Number(secondNum)
-         console.log(`${firstNum} - ${secondNum} = ${min}`)
-     }  
- };          
-minus();
+function division(first, second) {
+    return first / second;
+}
+
+
+function plus(first, second) {
+    return first + second;
+}
+
+
+function minus(first, second) {
+    return first - second;
+}
+        
+
+
+
+
