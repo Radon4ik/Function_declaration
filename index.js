@@ -2,7 +2,7 @@ function askNumbers() {
     const firstNum = +prompt('Enter the first digit');
     const value = prompt('Enter the value(+-*/)');
     const secondNum = +prompt('Enter the second digit'); 
-    const example = `${firstNum} ${value} ${secondNum} =`;
+    const example = (`${firstNum} ${value} ${secondNum} =`);
 
     if (value === '*') {
         console.log(example, multiply(firstNum, secondNum));
